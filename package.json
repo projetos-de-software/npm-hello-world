@@ -1,0 +1,39 @@
+{
+    "name": "primeiro-npm",
+    "version": "0.1.0",
+    "description": "Projeto de Teste de um pacote NPM",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "commit": "git-cz",
+        "release": "standard-version"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/projetos-de-software/npm-hello-world.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/projetos-de-software/npm-hello-world/issues"
+    },
+    "homepage": "https://github.com/projetos-de-software/npm-hello-world#readme",
+    "devDependencies": {
+        "@commitlint/cli": "^17.0.3",
+        "@commitlint/config-conventional": "^17.0.3",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^8.0.1",
+        "standard-version": "^9.5.0"
+    },
+    "bin": {
+        "primeiro-npm": "bin/run.js"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
